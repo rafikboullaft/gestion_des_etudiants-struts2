@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>  
+<package name="default" extends="struts-default">  
+  
+<action name="index" class="com.ensah.bean.index">  
+<result name="success">/WEB-INF/welcome.jsp</result>  
+</action>
+
+<action name="compte" >  
+<result >/WEB-INF/compte.jsp</result>  
+</action>
+<action name="moncompte" class="com.ensah.bean.Compte">  
+	<result name="success">/WEB-INF/Confcompte.jsp</result>
+	<result name="input">/WEB-INF/compte.jsp</result>
+</action>  
+
+ <action name="inscrire" >  
+<result >/WEB-INF/inscrire.jsp</result>  
+</action>
+ 
+ <action name="inscription" class="com.ensah.bean.Laureat">  
+	<result name="success">/WEB-INF/Confinscript.jsp</result>
+	<result name="input">/WEB-INF/inscrire.jsp</result>
+</action> 
+
+</package>  
+</struts> 
